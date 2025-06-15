@@ -1,0 +1,97 @@
+/* Colores base */
+:root {
+  --beige-claro: #e8d1bd;
+  --beige-intermedio: #d6b89c;
+  --marron-oscuro: #6b4a36;
+  --negro: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: var(--beige-claro);
+  color: var(--marron-oscuro);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+  padding: 2rem;
+  background: linear-gradient(to right, #e8d1bd, #f4e6db);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-info, .contact-form {
+  background-color: var(--beige-intermedio);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 350px;
+}
+
+.contact-info img.coffee-img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.7rem;
+  background-color: var(--marron-oscuro);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.map {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+}

@@ -1,0 +1,106 @@
+/* Colores base extraídos de la imagen */
+:root {
+  --color-principal: #d6b89c;
+  --color-secundario: #f3efea;
+  --color-titulos: #0f1c34;
+  --color-fondo: #fff8f2;
+  --color-texto: #322134;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: var(--beige-claro);
+  color: var(--marron-oscuro);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* SECCIÓN: TÍTULO GENERAL */
+.section-title {
+  background-color: var(--color-titulos);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+/* PÁGINA: NOSOTROS */
+.about-content {
+  display: grid;
+  grid-template-areas: 
+    "text image";
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--color-blanco);
+}
+
+.about-text {
+  grid-area: text;
+}
+
+.about-text h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-texto);
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.side-img {
+  grid-area: image;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* GALERÍA EQUIPO */
+.team-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: var(--color-secundario);
+}
+
+.team-gallery img {
+  width: 100%;
+  border: 2px solid var(--color-principal);
+  border-radius: 6px;
+}
+
+
